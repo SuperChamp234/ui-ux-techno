@@ -3,26 +3,43 @@
 
 .osParallax {
 	background-image: url("../images/Parallax_Image.png");
+	text-align: center;
   	min-height: 500px;
+	max-width: 99%;
   	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
-	border-radius: 20px;
+	border-radius: 30px;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	margin-right: auto;
+	margin-left: auto;
 }
 .zainos{
 	text-align: center;
 	font-size: 72px;
     line-height: 1.25;
     letter-spacing: .004em;
-	background: -webkit-linear-gradient(rgb(211, 142, 39), rgb(230, 94, 16));
+	background: -webkit-linear-gradient(#f53844, #42378f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 	font-weight: 500;
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
+.zainos-description{
+	text-align: center;
+	margin-top: 50px;
+	font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: .004em;
+	background: -webkit-linear-gradient(rgb(39, 171, 211), rgb(4, 33, 112));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	font-weight: 400;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
 
 .subtitle-text-white {
 	font-size: 32px;
@@ -45,11 +62,27 @@
 	font-size: 32px;
     line-height: 1.25;
     letter-spacing: .004em;
-	background: -webkit-linear-gradient(#eee, rgb(124, 124, 124));
+	border-radius: 50%;
+	background: -webkit-linear-gradient(#f53844, #42378f);;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-	font-weight: 300;
+	font-weight: 500;
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+	}
+
+	70% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0.95);
+	}
 }
 body {
 	font-family: source-sans-pro;
