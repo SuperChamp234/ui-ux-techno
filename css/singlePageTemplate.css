@@ -63,6 +63,10 @@
     line-height: 1.25;
     letter-spacing: .004em;
 	border-radius: 50%;
+	/* move text a bit up */
+	position: relative;
+	top: -10px;
+
 	background: -webkit-linear-gradient(#f53844, #42378f);;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
