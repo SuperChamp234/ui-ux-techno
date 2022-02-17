@@ -33,7 +33,7 @@
 	font-size: 32px;
     line-height: 1.25;
     letter-spacing: .004em;
-	background: -webkit-linear-gradient(rgb(39, 171, 211), rgb(4, 33, 112));
+	background: -webkit-linear-gradient(rgb(230, 124, 38), rgb(224, 195, 64));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 	font-weight: 400;
@@ -65,27 +65,33 @@
 	border-radius: 50%;
 	/* move text a bit up */
 	position: relative;
+	text-align: center;
 	top: -10px;
-
 	background: -webkit-linear-gradient(#f53844, #42378f);;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 	font-weight: 500;
     font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-	transform: scale(1);
-	animation: pulse 2s infinite;
+	opacity: 0.90;
+	animation: fade-in 2s infinite;
 }
-@keyframes pulse {
+@keyframes fade-in {
 	0% {
-		transform: scale(0.95);
+		opacity: 0.60;
 	}
 
-	70% {
-		transform: scale(1);
+	25% {
+		opacity: 0.90;
 	}
 
+	50% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 0.90;
+	}
 	100% {
-		transform: scale(0.95);
+		opacity: 0.60;
 	}
 }
 body {
